@@ -7,10 +7,12 @@ import { RegisterComponent } from "./login/register.component";
 
 import { PagesModule } from "./pages/pages.module";
 import { APP_ROUTES } from "./app.routes";
+import { ServiceModule } from "./services/service.module";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, RegisterComponent],
-  imports: [BrowserModule, APP_ROUTES, PagesModule],
+  imports: [BrowserModule, APP_ROUTES, PagesModule, ServiceModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
